@@ -3,6 +3,7 @@ const { db, DataTypes } = require("../utils/database.util");
 const Registrations = db.define("registrations", {
   id: {
     type: DataTypes.INTEGER,
+    autoIncrement: true,
     primaryKey: true,
     allowNull: true,
   },
